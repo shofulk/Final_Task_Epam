@@ -1,0 +1,77 @@
+@media (min-width: 768px){
+
+    /* HOMEPAGE */
+    /* --------------------- */
+    .scale{
+        width: 80%;
+    }
+
+    .header_search_form{
+        display: inline-block;
+        float: right;
+        width: 30%;
+        border: none;
+    }
+
+    .header_search_form .input_search{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2; 
+        width: 0;
+        transition: .4s cubic-bezier(0, 0.8, 0, 1);
+        border: 1px solid transparent;
+    }
+
+    .header_search_form .input_search:focus{
+        width: 100%;
+        z-index: 1;
+        border: 1px solid #606060;
+    }
+
+    .main_sign_up_form{
+        width: 90%;
+        margin: 60px auto 80px auto;
+    }
+
+    .main_content_title{
+        right: 34%;
+    }
+
+    /* -------------------- */
+    /* CATEGORY */
+    /* -------------------- */
+
+    .category_main section:after{
+        max-width: 550px;
+    }
+
+    .category_cards{
+        max-width: 550px !important;
+    }
+
+    .card{
+        width: 200px;
+    }
+
+    /* -------------------- */
+    /* DETAIL PRODUCT */
+    /* -------------------- */
+
+    .block_info_name{
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .section_item_block_photo{
+        width: 720px;
+    }
+
+    /* SHOPPING BAG */
+
+    .section_shoppingBag_people_card,
+    .section_shoppingBag_total{
+        width: 670px;
+        margin: 0 auto;
+    }
+}

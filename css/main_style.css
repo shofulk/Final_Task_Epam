@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+    margin: 0 20px;
+    padding: 0;
+    font-family: 'Lato', regular;
+    font-size: 14px\1;
+    line-height: 1.5;
+    letter-spacing: 1px;
+} 
+
+h1{
+    font-family: 'Lato', regular; 
+    font-size: 69px;
+    text-align: center;
+    color: #303030;
+}
+
+h2{
+    font-family: 'Lato', bold; 
+    font-size: 34px;
+    text-align: center;
+    color: #303030;
+}
+
+a{
+    font-family: 'Lato', regular;
+    font-size: 16px;
+    color: #303030;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.header_menu_list{
+    font-family: 'Lato', regular;
+    font-size: 14px;
+}
+
+.header_block_search_input::-webkit-input-placeholder,
+.sign_up_email::-webkit-input-placeholder{
+    font-family: 'Lato';
+    font-size: 11px;
+    font-style: italic;
+    padding:20px 0 20px 10px;
+}
+
+/* .sign_up_email::-webkit-input-placeholder,
+.header_block_search_input::-webkit-input-placeholder{
+    padding:20px 0 20px 10px;
+} */
+
+.header_block_search_input::-moz-placeholder,
+.sign_up_email::-moz-placeholder{
+    font-family: 'Lato';
+    font-size: 11px;
+    font-style: italic;
+    padding:20px 0 20px 10px;
+}
+
+/* .sign_up_email::-moz-placeholder,
+.input_search::-moz-placeholder{
+    padding: 20px 0 20px 10px;
+} */
+
+.input_search::-ms-input-placeholder,
+.sign_up_email::-ms-input-placeholder{
+    font-family: 'Lato';
+    font-size: 11px;
+    font-style: italic;
+    padding:20px 0 20px 10px;
+}
+
+/* .sign_up_email::-ms-input-placeholder,
+.input_search::-ms-input-placeholder{
+    padding: 20px 0 20px 10px;
+} */
+
+.subheader1{
+    font: italic 24px Georgia;
+    color: #606060;
+    text-align: center;
+}
+
+.subheader2{
+    font: italic 18px Georgia;
+    color: #606060;
+    text-align: center;
+}
+
+.clearfix::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.large{
+    width: 230px;
+    height: 58px;
+}
+
+.breadcrumb{
+    font-family: 'Lato', regular;
+    font-size: 12px\1;
+}
+
+.button_1{
+    outline: none;
+    border: 1px solid #a3a3a3;
+    font-family: 'Lato', regular;
+    font-size: 14px;
+    background: white;
+}
+
+.button_1:hover{
+    background: #e5e5e5;
+}
+
+.button_2{
+    outline: none;
+    font-family: 'Lato', regular;
+    font-size: 14px;
+    background: #f68236;
+    color: white;
+    border: none;
+}
+
+.button_2:hover{
+    background: #e67429;
+}
+
+.edge {
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    -ms-interpolation-mode: nearest-neighbor;  /* IE */
+    image-rendering: crisp-edges; /* Стандартное свойство */
+}
