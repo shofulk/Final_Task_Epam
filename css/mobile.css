@@ -727,7 +727,6 @@
 .slider {
     position: relative;
     width: 100%;
-    padding: 0 10px;
     padding-bottom: 0;
     height: 120px;
 }
@@ -763,12 +762,12 @@
 }
   
 .prev {
-    left: 10px;
     z-index: 2;
 }
   
 .next {
-    right: 10px;
+    z-index: 2;
+    right: 0;
 }
   
 .slider_gallery {

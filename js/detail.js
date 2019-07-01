@@ -37,36 +37,34 @@ btn.addEventListener("click", function(e){
 
     let selected = this.querySelector(".selected");
 
-    if(selected == null){
-        target.classList.add("selected");
-    }else{
-        selected.classList.remove("selected");
-        target.classList.add("selected");
-    }
+    if(target.classList == "option_size_button"){
+        if(!target.classList.contains(".selected")){
+            target.classList.add("selected");
+        }else{
+            selected.classList.remove("selected");
+            target.classList.add("selected");
+        }
+    }   
 
     flag = true;
 });
 
 buttonAdd.addEventListener("click", function(){
-    let name = document.querySelector("#name_value").innerText.trim(),
-        number = document.querySelector("#number_value").innerText.trim(),
-        price = document.querySelector("#price_value").innerText.trim(),
-        size = document.querySelector(".options_size_button.selected").innerText.trim(),
-        selectedImage = document.querySelector(".active_block"),
-        image = selectedImage.parentNode.children[0].src;
-
-
-    console.log(name + " " + number + " " + price + " " + bag_qty + " " + size + " " + image.split("/")[image.split("/").length-1].split(".")[0] + "-bag");
-
     if(flag){
-        let item = {
-            item_name: name,
-            item_number: number,
-            item_price: price,
-            item_size: size,
-            quantity: 1,
-            img: "./img/detail_product/" + image.split("/")[image.split("/").length-1]
-        }
+        let name = document.querySelector("#name_value").innerText.trim(),
+            number = document.querySelector("#number_value").innerText.trim(),
+            price = document.querySelector("#price_value").innerText.trim(),
+            selectedImage = document.querySelector(".active_block"),
+            image = selectedImage.parentNode.children[0].src;
+            size = document.querySelector(".options_size_button.selected").innerText.trim(),
+            item = {
+                    item_name: name,
+                    item_number: number,
+                    item_price: price,
+                    item_size: size,
+                    quantity: 1,
+                    img: "./img/detail_product/" + image.split("/")[image.split("/").length-1]
+            }
 
         if(filterItems(shoppingBag, number, size) != null){
             shoppingBag[filterItems(shoppingBag, number, size)].quantity++;
